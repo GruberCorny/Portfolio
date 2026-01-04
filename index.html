@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cornelius Gruber - IT Portfolio</title>
+    <meta name="description" content="Portfolio von Cornelius Gruber - Student und angehender IT-Entwickler">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -13,10 +14,95 @@
     <div id="navbar-placeholder"></div>
 
     <main>
-        <section>
-            <h1>Heading</h1>
-            <p>Paragraph</p>
-            <p>Paragraph</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="/assets/profile.jpg" alt="Cornelius Gruber" class="profile-image">
+                <h1>Hallo, ich bin <span class="accent-text">Cornelius Gruber</span></h1>
+                <p class="hero-subtitle">Student & IT-Enthusiast</p>
+                <p class="hero-description">
+                    Ich entwickle gerne moderne Webanwendungen und bin auf der Suche nach spannenden
+                    Praktikumsmöglichkeiten im IT-Bereich.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/sites/projects.html" class="btn btn-primary">Meine Projekte</a>
+                    <a href="/sites/contact.html" class="btn btn-secondary">Kontakt</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Technologien & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Linux Command Line</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Preview -->
+        <section class="projects-preview">
+            <h2>Ausgewählte Projekte</h2>
+            <p class="section-intro">Hier sind einige meiner aktuellen IT-Projekte</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>RevXT - KI-Client</h3>
+                    <p>Intelligenter KI-Client für das Strategiespiel RevXT mit Game-Tree-Suche und fortgeschrittenen
+                        Algorithmen.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">KI</span>
+                        <span class="tag">Game Theory</span>
+                    </div>
+                    <a href="/sites/projects.html" class="project-link">Mehr erfahren →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Bitburner Automation</h3>
+                    <p>Automatisierungsscripts für Bitburner - Stock Trading, Hacknet-Management und Contract-Solver.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Algorithmen</span>
+                    </div>
+                    <a href="/sites/projects.html" class="project-link">Mehr erfahren →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Weitere Projekte</h3>
+                    <p>Entdecke weitere spannende Projekte in meinem Portfolio.</p>
+                    <a href="/sites/projects.html" class="project-link">Alle Projekte ansehen →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <h2>Interessiert an einer Zusammenarbeit?</h2>
+            <p>Ich bin auf der Suche nach Praktikumsmöglichkeiten und freue mich über eine Kontaktaufnahme!</p>
+            <a href="/sites/contact.html" class="btn btn-primary">Kontakt aufnehmen</a>
         </section>
     </main>
 
