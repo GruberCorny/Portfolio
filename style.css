@@ -24,11 +24,14 @@ body.dark-mode {
 
 body.dark-mode nav {
     background-color: var(--dark);
-    color: var(--light);
 }
 
 body.dark-mode nav li a {
-    color: var(--light);
+    color: var(--fg);
+}
+
+body.dark-mode .nav-brand a {
+    color: var(--accent);
 }
 
 body.dark-mode .skill-card,
@@ -55,9 +58,19 @@ body.dark-mode .project-body h3 {
     color: var(--accent);
 }
 
+/* Project Preview Headlines (index.html) auf Accent */
+body.dark-mode .projects-preview h2 {
+    color: var(--fg);
+}
+
 body.dark-mode .project-header h2,
 body.dark-mode .project-card h3 {
-    color: var(--light);
+    color: var(--accent);
+}
+
+/* Contact Headlines auf Accent */
+body.dark-mode .contact-card h3 {
+    color: var(--accent);
 }
 
 body.dark-mode .interest-card p,
@@ -83,11 +96,36 @@ body.dark-mode .tag {
 }
 
 body.dark-mode .project-link {
-    color: var(--accent);
+    color: var(--accent-dark);
 }
 
 body.dark-mode .project-link:hover {
-    color: #8fffb0;
+    color: var(--accent);
+}
+
+/* GitHub Buttons in projects.html auf accent-dark */
+body.dark-mode .project-links .btn-secondary {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+body.dark-mode .project-links .btn-secondary:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: var(--light);
+}
+
+/* Footer Links im Dark Mode */
+body.dark-mode .footer-section a {
+    color: var(--fg);
+}
+
+body.dark-mode .footer-section a:hover {
+    color: var(--accent);
+}
+
+body.dark-mode .footer-section p {
+    color: var(--light);
 }
 
 /* Global Styles */
@@ -153,6 +191,7 @@ nav li {
 
 nav li:hover {
     background-color: var(--accent);
+    color: var(--fg);
     transform: translateY(-2px);
 }
 
@@ -160,7 +199,7 @@ nav li a {
     padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
-    color: inherit;
+    color: var(--bg);
 }
 
 #github {
@@ -394,7 +433,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 }
 
 .project-card h3 {
-    color: var(--dark);
+    color: var(--accent-dark);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
