@@ -1,0 +1,36 @@
+Portfolio Website - Cornelius Gruber
+=====================================
+
+INSTALLATION & NUTZUNG
+----------------------
+
+1. ZIP-Datei entpacken
+2. Datei "index.html" im Browser öffnen (Doppelklick)
+3. Die Website funktioniert komplett offline!
+
+FEATURES
+--------
+✓ Dark Mode (Klick auf Mond/Sonne-Icon)
+✓ Responsive Design
+✓ Dropdown-Menü mit allen Projekten
+✓ Individuelle Projektseiten
+✓ Kontaktformular-Vorbereitung
+
+TECHNOLOGIEN
+------------
+- HTML5
+- CSS3 (Custom Properties, Flexbox, Grid)
+- Vanilla JavaScript
+- Git/GitHub
+
+ONLINE VERSION
+--------------
+Live-Version verfügbar unter:
+https://grubercorny.github.io/own-Website/
+
+KONTAKT
+-------
+Email: co.postfach@gmail.com
+GitHub: https://github.com/GruberCorny
+
+© 2024 Cornelius Gruber

@@ -27,7 +27,28 @@ body.dark-mode nav {
 }
 
 body.dark-mode nav li a {
-    color: var(--fg);
+    color: var(--light);
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: transparent;
+    /* border-color: var(--accent); */
+}
+
+body.dark-mode .dropdown-menu li {
+    background-color: var(--dark);
+}
+
+body.dark-mode .dropdown-menu li a {
+    color: var(--light);
+}
+
+body.dark-mode .dropdown-menu li:hover {
+    background-color: var(--accent);
+}
+
+body.dark-mode .dropdown-menu li:hover a {
+    color: var(--dark);
 }
 
 body.dark-mode .nav-brand a {
@@ -70,7 +91,7 @@ body.dark-mode .project-card h3 {
 
 /* Contact Headlines auf Accent */
 body.dark-mode .contact-card h3 {
-    color: var(--accent);
+    color: var(--accent-dark);
 }
 
 body.dark-mode .interest-card p,
@@ -128,6 +149,10 @@ body.dark-mode .footer-section p {
     color: var(--light);
 }
 
+body.dark-mode .footer-bottom p {
+    color: var(--light);
+}
+
 /* Global Styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -177,6 +202,7 @@ nav ul {
     height: 100%;
     gap: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
@@ -187,6 +213,7 @@ nav li {
     display: block;
     border-radius: var(--border-radius);
     transition: all var(--transition-time) ease;
+    position: relative;
 }
 
 nav li:hover {
@@ -200,6 +227,63 @@ nav li a {
     display: block;
     text-decoration: none;
     color: var(--bg);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+nav ul.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    margin-top: 0;
+    min-width: 200px;
+    max-width: 300px;
+    z-index: 1000;
+    padding: 0.75rem;
+    list-style: none;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border-radius);
+    display: none;
+    box-sizing: border-box;
+    height: auto !important;
+    width: auto !important;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block !important;
+}
+
+.dropdown-menu li {
+    border: 1px solid var(--accent);
+    border-radius: var(--border-radius);
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    background-color: var(--fg);
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu li:hover {
+    background-color: var(--accent);
+    transform: none;
+}
+
+.dropdown-menu li a {
+    padding: 0.75rem 1rem;
+    color: var(--bg);
+    white-space: nowrap;
+    display: block;
 }
 
 #github {
@@ -745,7 +829,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 }
 
 .contact-card svg {
-    color: var(--accent-dark);
+    color: var(--accent);
     margin-bottom: 1rem;
 }
 
@@ -756,12 +840,12 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 }
 
 .contact-card p {
-    color: var(--gray);
+    color: var(--fg);
     margin-bottom: 1rem;
 }
 
 .contact-link {
-    color: var(--accent-dark);
+    color: var(--accent);
     font-weight: 500;
     text-decoration: none;
     word-break: break-word;
@@ -836,6 +920,10 @@ footer.visible {
 
 .footer-section a:hover {
     color: var(--accent);
+}
+
+#footer_ul_up {
+    text-align: right;
 }
 
 .back-to-top {
