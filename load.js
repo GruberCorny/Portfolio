@@ -96,8 +96,8 @@ function initFooterScroll() {
         // Berechne Schwellenwerte mit Hysterese
         // showThreshold: Wann Footer EINBLENDEN (wenn fast am Ende)
         // hideThreshold: Wann Footer AUSBLENDEN (wenn weiter oben)
-        const showThreshold = (baseContentHeight - viewportHeight) * 0.8;  // 80% gescrollt
-        const hideThreshold = (baseContentHeight - viewportHeight) * 0.6;  // 60% gescrollt
+        const showThreshold = (baseContentHeight - viewportHeight) * 0.95;  // 95% gescrollt
+        const hideThreshold = (baseContentHeight - viewportHeight) * 0.85;  // 85% gescrollt
 
         let shouldShowFooter;
         if (isFooterVisible) {
