@@ -136,6 +136,18 @@ body.dark-mode .project-links .btn-secondary:hover {
     color: var(--light);
 }
 
+/* Button Secondary im Dark Mode */
+body.dark-mode .btn-secondary {
+    color: var(--fg);
+    border-color: var(--fg);
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: var(--bg);
+}
+
 /* Footer Links im Dark Mode */
 body.dark-mode .footer-section a {
     color: var(--fg);
@@ -415,13 +427,14 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--bg);
-    border-color: var(--bg);
+    color: var(--fg);
+    border-color: var(--fg);
 }
 
 .btn-secondary:hover {
-    background-color: var(--bg);
-    color: var(--dark);
+    background-color: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
     transform: translateY(-2px);
 }
 
