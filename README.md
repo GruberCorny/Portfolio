@@ -96,8 +96,9 @@ Bearbeite die CSS-Variablen in `style.css`:
 2. Füge es zur Startseite oder "Über mich"-Seite hinzu:
 
 ```html
-<img src="/assets/profile.jpg" alt="Cornelius Gruber" class="profile-image">
+<img src="assets/profile.jpg" alt="Cornelius Gruber" class="profile-image">
 ```
+
 
 ## 🖥️ Lokale Entwicklung
 
