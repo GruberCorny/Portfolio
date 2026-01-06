@@ -714,7 +714,9 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 .hobby-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .interest-card h3,
