@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     initThemeToggle();
-    initFooterScroll();
+    //initFooterScroll();
 });
 
 function initThemeToggle() {
@@ -57,6 +57,8 @@ function initThemeToggle() {
     });
 }
 
+
+/*
 function initFooterScroll() {
     const loadedFooter = document.querySelector('.scroll-activated-footer');
     if (!loadedFooter) {
@@ -112,4 +114,4 @@ function initFooterScroll() {
     });
 
     setTimeout(checkScroll, 200);
-}
+} */
