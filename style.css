@@ -384,6 +384,7 @@ nav ul.dropdown-menu {
 
 #email {
     border: none;
+    margin-left: 2rem;
 }
 
 #email a {
