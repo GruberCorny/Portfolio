@@ -266,12 +266,6 @@ nav li a {
     color: var(--bg);
 }
 
-
-.dropdown,
-.dropdown a {
-    position: relative;
-}
-
 .dropdown-toggle-input {
     position: absolute;
     opacity: 0;
@@ -331,10 +325,6 @@ nav li a {
 
 .dropdown:hover a img {
     transform: rotate(0deg);
-}
-
-.dropdown {
-    outline: red solid 1px
 }
 
 nav ul.dropdown-menu {
@@ -1095,8 +1085,32 @@ footer {
 
     .dropdown ul.dropdown-menu {
         position: fixed;
+        top:revert;
+        left: revert;
+        min-width: none;
+        max-width: none;
+        padding: revert;
+        background-color: rgb(from var(--dark) r g b / 0.25);
+        backdrop-filter: blur(5px);
+        border-radius: 0;
         inset: 0;
-        outline: red solid 1px
+
+/*         
+        position: absolute;
+        top: calc(100% + 10px);
+        left: -2ch;
+        min-width: 200px;
+        max-width: 300px;
+        z-index: 1000;
+        padding: 0.75rem;
+        list-style: none;
+        background-color: transparent;
+        border: none;
+        border-radius: var(--border-radius);
+        display: none;
+        box-sizing: border-box;
+        height: auto !important;
+        width: auto !important; */
     }
 }
 
