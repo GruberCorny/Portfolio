@@ -1,0 +1,3 @@
+- [ ] delete contact to add email botton
+- [ ] generlyse style in about_me
+- [ ] 

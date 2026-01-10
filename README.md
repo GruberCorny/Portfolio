@@ -32,4 +32,3 @@ Die Seite läuft auf GitHub Pages: [grubercorny.github.io/Portfolio]
 - HTML5, CSS3, Vanilla JavaScript
 - CSS Custom Properties für Theming
 - Keine Frameworks oder Dependencies
-

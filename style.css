@@ -421,7 +421,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 }
 
 
-.btn {
+[class^="btn"] {
     padding: 0.75rem 2rem;
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -707,6 +707,10 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
+    
+}
+.about-cta a:not(.btn-primary):hover{
+    background-color: var(--fg);
 }
 
 
