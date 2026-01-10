@@ -382,6 +382,34 @@ nav ul.dropdown-menu {
     fill: var(--bg);
 }
 
+#email {
+    border: none;
+}
+
+#email a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-time) ease;
+}
+
+#email .email-icon {
+    width: 20px;
+    height: 20px;
+    transition: filter var(--transition-time) ease;
+}
+
+#email:hover a {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+#email:hover .email-icon {
+    filter: brightness(0) saturate(100%) invert(7%) sepia(8%) saturate(1238%) hue-rotate(169deg) brightness(97%) contrast(91%);
+}
+
 
 #theme-toggle {
     border: none;
@@ -465,10 +493,11 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 
 
 [class^="btn"] {
-    padding: 0.75rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.1rem;
     transition: all var(--transition-time) ease;
     display: inline-flex;
     align-items: center;
