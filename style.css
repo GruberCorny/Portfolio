@@ -77,9 +77,7 @@ body.dark-mode .skill-card li {
 body.dark-mode .skill-card,
 body.dark-mode .project-card,
 body.dark-mode .project-detailed,
-body.dark-mode .contact-card,
-body.dark-mode .interest-card,
-body.dark-mode .hobby-card {
+body.dark-mode .contact-card {
     background-color: #2a2a2a;
     color: var(--light);
 }
@@ -91,8 +89,6 @@ body.dark-mode .skill-category {
 
 body.dark-mode .skill-card h3,
 body.dark-mode .skill-category h3,
-body.dark-mode .interest-card h3,
-body.dark-mode .hobby-card h3,
 body.dark-mode .about-section h2,
 body.dark-mode .project-body h3 {
     color: var(--accent);
@@ -113,13 +109,7 @@ body.dark-mode .contact-card h3 {
     color: var(--accent-dark);
 }
 
-body.dark-mode .interest-card p,
-body.dark-mode .hobby-card p {
-    color: #b0b0b0;
-}
-
 body.dark-mode .about-intro,
-body.dark-mode .projects-intro,
 body.dark-mode .contact-intro,
 body.dark-mode .section-intro {
     color: #b0b0b0;
@@ -592,6 +582,16 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     margin: 0 auto;
 }
 
+.about-section .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+}
+
+.hobbies-section .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+}
+
 .grow {
     flex-grow: 1;
 }
@@ -684,7 +684,6 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     opacity: 0.9;
 }
 
-.about-content,
 .projects-content,
 .contact-content {
     max-width: 900px;
@@ -697,7 +696,8 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 .contact-intro {
     font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     color: var(--gray);
 }
 
@@ -711,9 +711,21 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--accent-dark);
 }
 
+.about-section:has(.projects-grid) h2 {
+    text-align: center;
+}
+
+.about-section:has(.timeline) h2 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .timeline {
     border-left: 3px solid var(--accent);
     padding-left: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .timeline-item {
@@ -729,12 +741,6 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--gray);
     font-weight: 500;
     margin-bottom: 0.5rem;
-}
-
-.skills-detailed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
 }
 
 .skill-category {
@@ -769,35 +775,8 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     background-color: var(--fg);
 }
 
-
-.interests-grid,
-.hobbies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.interest-card,
-.hobby-card {
-    background-color: var(--light);
-    padding: 2rem 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    text-align: center;
-    transition: all var(--transition-time) ease;
-    border: 2px solid transparent;
-}
-
-.interest-card:hover,
-.hobby-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--accent);
-}
-
-.interest-icon,
-.hobby-icon {
+/* Icon Container für Interest/Hobby Icons */
+.interest-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     display: flex;
@@ -805,27 +784,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     align-items: center;
 }
 
-.interest-card h3,
-.hobby-card h3 {
-    color: var(--accent-dark);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.interest-card p,
-.hobby-card p {
-    color: var(--gray);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-
-.projects-list {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
+/* Projects Detail Page */
 .project-detailed {
     background-color: var(--light);
     padding: 2rem;
@@ -896,19 +855,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--light);
 }
 
-.add-project-note {
-    background-color: var(--gray-light);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--accent);
-}
-
-.add-project-note h3 {
-    color: var(--accent-dark);
-    margin-bottom: 1rem;
-}
-
-
+/* Contact Page */
 .contact-methods {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -957,24 +904,7 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--accent);
 }
 
-.contact-form-section {
-    background-color: var(--gray-light);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-}
-
-.contact-form-section h2 {
-    margin-bottom: 1rem;
-    color: var(--dark);
-}
-
-.form-description {
-    color: var(--gray);
-    margin-bottom: 1.5rem;
-}
-
-
+/* Footer */
 footer {
     width: 100%;
     background: var(--dark);
@@ -1068,12 +998,6 @@ footer {
         padding: 3rem 1rem;
     }
 
-    .about-content,
-    .projects-content,
-    .contact-content {
-        padding: 2rem 1rem;
-    }
-
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1085,7 +1009,7 @@ footer {
 
     .dropdown ul.dropdown-menu {
         position: fixed;
-        top:revert;
+        top: revert;
         left: revert;
         min-width: none;
         max-width: none;
@@ -1095,7 +1019,7 @@ footer {
         border-radius: 0;
         inset: 0;
 
-/*         
+        /*         
         position: absolute;
         top: calc(100% + 10px);
         left: -2ch;
