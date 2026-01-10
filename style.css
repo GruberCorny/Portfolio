@@ -775,7 +775,6 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     background-color: var(--fg);
 }
 
-/* Icon Container für Interest/Hobby Icons */
 .interest-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -784,7 +783,10 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     align-items: center;
 }
 
-/* Projects Detail Page */
+.about-section .project-card {
+    text-align: center;
+}
+
 .project-detailed {
     background-color: var(--light);
     padding: 2rem;
@@ -855,7 +857,6 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--light);
 }
 
-/* Contact Page */
 .contact-methods {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -904,7 +905,6 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
     color: var(--accent);
 }
 
-/* Footer */
 footer {
     width: 100%;
     background: var(--dark);
