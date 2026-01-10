@@ -1,3 +1,4 @@
 - [ ] delete contact to add email botton
 - [ ] generlyse style in about_me
-- [ ] 
+- [X] nav bar Projects nach nuntern schieben / zentrieren , pfeil andern
+- [ ] astro.build fuer blocks noch anschauen / static website generation
