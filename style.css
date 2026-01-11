@@ -89,7 +89,7 @@ body.dark-mode .skill-category {
 
 body.dark-mode .skill-card h3,
 body.dark-mode .skill-category h3,
-body.dark-mode .about-section h2,
+body.dark-mode .about-section h3,
 body.dark-mode .project-body h3 {
     color: var(--accent);
 }
@@ -727,13 +727,13 @@ body.dark-mode #theme-toggle-btn:hover .theme-icon {
 }
 
 .about-section {
-    margin-bottom: 3rem;
+    margin-block: 3rem;
 }
 
 .about-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--accent-dark);
+    color: var(--fg);
 }
 
 .about-section:has(.projects-grid) h2 {
@@ -1080,12 +1080,12 @@ html {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--accent);
+    border: 4px solid var(--bg);
     box-shadow: var(--shadow-hover);
     margin: 0 auto 2rem;
 }
 
-.hero .profile-image {
+.profile-image {
     border-color: var(--bg);
 }
 
