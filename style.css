@@ -373,13 +373,8 @@ nav ul.dropdown-menu {
     padding: 0.5rem;
 }
 
-#github svg {
-    fill: var(--accent);
-    transition: fill var(--transition-time) ease;
-}
-
-#github:hover svg {
-    fill: var(--bg);
+#github:hover img {
+    filter: invert(1);
 }
 
 #email {
@@ -397,6 +392,7 @@ nav ul.dropdown-menu {
 }
 
 #email .email-icon {
+    fill: var(--accent);
     width: 20px;
     height: 20px;
     transition: filter var(--transition-time) ease;
@@ -418,7 +414,6 @@ nav ul.dropdown-menu {
 
 #theme-toggle-btn {
     background: transparent;
-    border: 1px solid var(--accent);
     border-radius: var(--border-radius);
     padding: 0.5rem;
     cursor: pointer;
@@ -433,7 +428,7 @@ nav ul.dropdown-menu {
 }
 
 .theme-icon {
-    fill: var(--accent);
+    fill: var(--light);
     transition: fill var(--transition-time) ease;
 }
 
@@ -442,7 +437,7 @@ nav ul.dropdown-menu {
 }
 
 body.dark-mode #theme-toggle-btn:hover .theme-icon {
-    fill: var(--light);
+    fill: var(--dark);
 }
 
 
